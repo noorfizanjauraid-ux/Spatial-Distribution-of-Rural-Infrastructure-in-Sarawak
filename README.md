@@ -1,388 +1,384 @@
-# Spatial-Distribution-of-Rural-Infrastructure-in-Sarawak
+# <div align="center">
 
+# 🗺️ Spatial Distribution Analysis of Rural Infrastructure in Sarawak
 
+# A Cartographic Production
 
-A cartographic visualization of rural infrastructure distribution in Sarawak.
+# 
 
-Spatial Distribution Analysis of Rural Infrastructure in Sarawak: A Cartographic Production
+# A GIS Portfolio Project by Bayu (Noorfizan Jauraid)
 
+# Demonstrating professional cartographic and spatial data management skills.
 
+# 
 
-1\. Overview
+# </div>
 
-This project presents a professional cartographic visualization of rural infrastructure distribution in Sarawak, integrating authoritative datasets from global and national sources. The objective is to demonstrate technical competency in GIS data acquisition, spatial data preparation, symbology design, and map layout production, aligned with research-grade standards expected for graduate-level work.
+# <div align="center">
 
+# 
 
+# 
 
-This repository forms part of a broader GIS portfolio showcasing analytical and cartographic capabilities relevant to development planning, rural studies, and spatial policy research.
+# 
 
+# 
 
+# 
 
-2\. Objectives
+# 
 
+# </div>
 
+# 🧭 1. Overview
 
-This project aims to:
+# 
 
+# This project presents a research-grade cartographic visualization of rural infrastructure distribution in Sarawak, integrating authoritative GIS datasets from national and global providers. It is designed to demonstrate:
 
+# 
 
-Map and visualize the spatial distribution of key rural infrastructure features in Sarawak.
+# Competence in GIS data acquisition
 
+# 
 
+# Spatial data preparation
 
-Integrate multiple datasets (boundaries, elevation, transportation networks, settlements, land cover) into a coherent cartographic workflow.
+# 
 
+# Professional symbology and map layout design
 
+# 
 
-Produce publication-ready map layouts following recognized cartographic principles.
+# Research-oriented documentation and workflow structuring
 
+# 
 
+# This repository forms part of my GIS portfolio and supports my application for a Graduate Research Assistant (GRA) role in geospatial or development-focused research.
 
-Demonstrate the ability to manage, clean, and prepare GIS datasets for spatial analysis.
+# 
 
+# 🎯 2. Objectives
 
+# 
 
-3\. Study Area
+# The aim of this project is to:
 
+# 
 
+# Map and visualize the spatial distribution of key rural infrastructure features.
 
-Sarawak, Malaysia — the largest state in East Malaysia — characterized by dispersed rural settlements, mountainous terrain, complex river networks, and wide variations in accessibility.
+# 
 
-The cartographic extent follows the full administrative boundary of Sarawak (GADM Level 1).
+# Integrate multi-source spatial datasets into a coherent cartographic workflow.
 
+# 
 
+# Produce publication-quality maps aligned with research standards.
 
-4\. Data Sources
+# 
 
+# Demonstrate end-to-end GIS project management and documentation.
 
+# 
 
-All datasets used in this project are openly licensed for academic and non-commercial use.
+# 🗺️ 3. Study Area
 
-Below is the complete data inventory.
+# 
 
+# Sarawak, Malaysia — the largest state in East Malaysia — characterized by dispersed rural settlements, mountainous terrain, and extensive hydrological networks.
 
+# The mapping extent is defined using the GADM Level 1 administrative boundary.
 
-4.1 Administrative Boundaries
+# 
 
+# 📦 4. Data Sources
 
+# 4.1 Administrative Boundaries 🗂️
 
-Source: GADM v4.1
+# 
 
+# Provider: GADM v4.1
 
+# 
 
-URL: https://gadm.org
+# URL: https://gadm.org
 
+# 
 
+# Levels: L1 (state), L2 (district)
 
-Data Used: Level 1 (states), Level 2 (districts)
+# 
 
+# Format: Shapefile / GeoPackage
 
+# 
 
-Format: Shapefile / GeoPackage
+# 4.2 Elevation Data — SRTM 1 Arc-Second DEM ⛰️
 
+# 
 
+# Provider: NASA Earthdata
 
-Purpose: Define the project boundary and AOI mask.
+# 
 
+# URL: https://search.earthdata.nasa.gov
 
+# 
 
-4.2 Elevation (DEM – SRTM 1 Arc-Second)
+# Type: DEM tiles (GeoTIFF)
 
+# 
 
+# Use: Hillshade, elevation visualization
 
-Source: NASA Earthdata
+# 
 
+# 4.3 OpenStreetMap (OSM) Infrastructure 🚧
 
+# 
 
-URL: https://search.earthdata.nasa.gov
+# Provider: Geofabrik (Borneo Extract)
 
+# 
 
+# URL: https://download.geofabrik.de/asia/malaysia.html
 
-Tiles Required: All SRTM tiles covering Sarawak
+# 
 
+# Layers Extracted: Roads, rivers, buildings, landuse, amenities
 
+# 
 
-Format: GeoTIFF
+# 4.4 Land Cover — ESA WorldCover (2021) 🌲
 
+# 
 
+# Provider: ESA
 
-Purpose: Hillshade, elevation backdrop, terrain context.
+# 
 
+# URL: https://esa-worldcover.org
 
+# 
 
-4.3 OpenStreetMap (OSM) Infrastructure
+# Resolution: 10m
 
+# 
 
+# Use: Background land cover context
 
-Source: Geofabrik – Borneo Extract
+# 
 
+# 4.5 Population Data (Optional) 👥
 
+# 
 
-URL: https://download.geofabrik.de/asia/malaysia.html
+# Provider: WorldPop
 
+# 
 
+# URL: https://www.worldpop.org
 
-Layers Extracted:
+# 
 
+# Use: Rural population distribution context
 
+# 
 
-Roads (primary, secondary, tertiary, residential)
+# 📁 5. Project Folder Structure
 
+# sarawak-rural-infrastructure-cartography/
 
+# │
 
-Rivers
+# ├── docs/
 
+# │   ├── images/               # Screenshots \& exported figures
 
+# │
 
-Buildings (optional for density mapping)
+# ├── src/
 
+# │   ├── qgis/                 # QGIS project (.qgz) \& style files (.qml)
 
+# │
 
-Landuse
+# ├── data/                     # Local datasets (gitignored)
 
+# │   ├── boundaries/
 
+# │   ├── DEM/
 
-Points of interest (schools, clinics, etc.)
+# │   ├── OSM/
 
+# │   ├── landcover/
 
+# │   ├── population/
 
-Format: Shapefile / PBF
+# │
 
+# ├── .gitignore
 
+# ├── README.md
 
-Purpose: Feature-level infrastructure visualization.
+# └── LICENSE (optional)
 
+# 
 
+# 🔧 6. Workflow Summary
 
-4.4 Land Cover
+# ✅ Step 1 — Define Area of Interest (AOI)
 
+# 
 
+# Use GADM L1 boundary for the Sarawak extent
 
-Dataset: ESA WorldCover 2021 (10m)
+# 
 
+# Save screenshot → docs/images/aoi.png
 
+# 
 
-Source: ESA
+# ✅ Step 2 — Acquire Datasets
 
+# 
 
+# SRTM DEM tiles
 
-URL: https://esa-worldcover.org
+# 
 
+# OSM infrastructure
 
+# 
 
-Format: GeoTIFF
+# WorldCover (optional)
 
+# 
 
+# WorldPop (optional)
 
-Purpose: Contextual base for terrain and land-use patterns.
+# 
 
+# ✅ Step 3 — Data Preparation
 
+# 
 
-4.5 Population (Optional for Future Analysis)
+# Merge DEM tiles
 
+# 
 
+# Clip layers to AOI
 
-Dataset: WorldPop Malaysia 2020
+# 
 
+# Standardize CRS (EPSG:3857 or EPSG:3375)
 
+# 
 
-Source: WorldPop
+# ✅ Step 4 — Cartographic Design in QGIS
 
+# 
 
+# Hillshade generation
 
-URL: https://www.worldpop.org
+# 
 
+# Road hierarchy symbology
 
+# 
 
-Format: GeoTIFF
+# Water and settlement layers
 
+# 
 
+# Label placement
 
-Purpose: Settlement patterns and rural population context.
+# 
 
+# Layout composition
 
+# 
 
-5\. Project Folder Structure
+# ✅ Step 5 — Final Outputs
 
-sarawak-rural-infrastructure-cartography/
+# 
 
-│
+# Export maps → PNG + PDF
 
-├── docs/
+# 
 
-│   ├── images/               # Screenshots of AOI, DEM tiles, map layouts
+# Store PNG in docs/images/
 
-│
+# 
 
-├── src/
+# 🖼️ 7. Expected Outputs
 
-│   ├── qgis/                 # QGIS project files (.qgz), styles (.qml)
+# 
 
-│
+# 🌄 Hillshade Elevation Map
 
-├── data/                     # Local data storage (excluded from GitHub)
+# 
 
-│   ├── boundaries/
+# 🛣️ Rural Road Network Map
 
-│   ├── DEM/
+# 
 
-│   ├── OSM/
+# 🌊 River \& Settlement Map
 
-│   ├── landcover/
+# 
 
-│   ├── population/
+# 🗺️ Composite Rural Infrastructure Map
 
-│
+# 
 
-├── .gitignore                # Prevents large datasets from being uploaded
+# Maps will be added as development progresses.
 
-├── README.md                 # Project documentation
+# 
 
-└── LICENSE (optional)
+# 🛠️ 8. Tools
 
+# 
 
+# QGIS 3.x
 
-6\. Workflow Summary
+# 
 
+# GDAL
 
+# 
 
-Define Area of Interest (AOI)
+# NASA Earthdata
 
+# 
 
+# ESA WorldCover
 
-Using GADM Sarawak boundary
+# 
 
+# OpenStreetMap / Geofabrik
 
+# 
 
-Save screenshot for documentation
+# 🙏 9. Acknowledgements
 
+# 
 
+# This project uses open-access datasets provided by NASA, ESA, GADM, OSM contributors, and WorldPop.
 
-Acquire datasets
+# All rights belong to their respective providers.
 
+# 
 
+# <div align="center">
 
-SRTM tiles downloaded using bounding boxes
+# 
 
+# 📌 Project maintained by Bayu
 
+# For academic and research demonstration purposes.
 
-OSM layers using Geofabrik Borneo region
+# 
 
-
-
-Land cover and population rasters (optional)
-
-
-
-Data preparation (not in GitHub due to size)
-
-
-
-Merge DEM tiles
-
-
-
-Clip DEM to AOI
-
-
-
-Reproject all data to a consistent CRS (EPSG:3857 or EPSG:3375)
-
-
-
-Cartographic design
-
-
-
-Apply symbology to roads, rivers, DEM hillshade
-
-
-
-Use layer blending and transparency
-
-
-
-Incorporate labels (districts, major towns)
-
-
-
-Design legend, scale bar, and north arrow
-
-
-
-Export final maps
-
-
-
-Save as PNG and PDF
-
-
-
-Upload PNG versions to docs/images/
-
-
-
-7\. Outputs
-
-
-
-Final cartographic deliverables include:
-
-
-
-Hillshade Elevation Map of Sarawak
-
-
-
-Rural Road Network Map
-
-
-
-Rivers and Settlements Distribution Map
-
-
-
-Composite Rural Infrastructure Map (Final)
-
-
-
-Each output will be added as development progresses.
-
-
-
-8\. Tools Used
-
-
-
-ArcGIS Pro
-
-
-
-QGIS 3.x (primary)
-
-
-
-GDAL
-
-
-
-ESA WorldCover
-
-
-
-NASA Earthdata SRTM Server
-
-
-
-OpenStreetMap / Geofabrik
-
-
-
-9\. Acknowledgements
-
-
-
-Datasets are sourced from ESA, NASA, WorldPop, and OSM contributors.
-
-All rights and licenses belong to their respective providers.
+# </div>
 
