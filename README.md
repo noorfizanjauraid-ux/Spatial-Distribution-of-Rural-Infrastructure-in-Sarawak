@@ -1,8 +1,4 @@
-# 📍 Spatial Distribution Analysis of Rural Infrastructure in Sarawak: A Cartographic Production
-
-###### 
-
-### A Cartographic Production
+# 📍Spatial Distribution Analysis of Rural Infrastructure in Sarawak
 
 
 
@@ -74,7 +70,7 @@
 
 #### 
 
-#### 📦 4. Data Sources
+### 📦 4. Data Sources
 
 #### 
 
@@ -190,7 +186,7 @@
 
 #### 
 
-#### 📁 5. Project Folder Structure
+### 📁 5. Project Folder Structure
 
 #### sarawak-rural-infrastructure-cartography/
 
@@ -230,7 +226,7 @@
 
 #### 
 
-#### 🔧 6. Workflow Summary
+### 🔧 6. Workflow Summary
 
 #### ✅ Step 1 — Define Area of Interest (AOI)
 
@@ -308,7 +304,7 @@
 
 #### 
 
-#### 🖼️ 7. Outputs
+### 🖼️ 7. Outputs
 
 #### 
 
@@ -316,19 +312,19 @@
 
 #### 
 
-#### 🌄 Hillshade Elevation Map
+* #### 🌄 Hillshade Elevation Map
 
 #### 
 
-#### 🛣️ Rural Road Network Map
+* #### 🛣️ Rural Road Network Map
 
 #### 
 
-#### 🌊 River Network \& Settlement Map
+* #### 🌊 River Network \& Settlement Map
 
 #### 
 
-#### 🗺️ Final Composite Infrastructure Map
+* #### 🗺️ Final Composite Infrastructure Map
 
 #### 
 
@@ -340,27 +336,31 @@
 
 #### 
 
-#### QGIS 3.x
+* #### ArcGIS Pro
+
+
+
+* #### QGIS 3.x
+
+
+
+* #### GDAL
+
+
+
+* #### NASA Earthdata
+
+
+
+* #### ESA WorldCover
+
+
+
+* #### OpenStreetMap / Geofabrik
 
 #### 
 
-#### GDAL
-
-#### 
-
-#### NASA Earthdata
-
-#### 
-
-#### ESA WorldCover
-
-#### 
-
-#### OpenStreetMap / Geofabrik
-
-#### 
-
-#### 🙏 9. Acknowledgements
+### 🙏 9. Acknowledgements
 
 #### 
 
