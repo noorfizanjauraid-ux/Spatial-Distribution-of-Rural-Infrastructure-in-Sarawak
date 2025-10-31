@@ -1,0 +1,21 @@
+# Ignore all raw GIS data
+/data/
+/data/*
+
+# Ignore QGIS backups
+*.qgs~
+*.qgz~
+
+# Ignore temporary raster/vector files
+*.aux.xml
+*.cpg
+*.dbf
+*.shx
+*.prj
+*.xml
+*.tif.aux
+*.lock
+
+# Ignore exported maps (optional)
+*.pdf
+*.png
