@@ -16,19 +16,19 @@
 
 #### 
 
-#### GIS data acquisition
+* #### GIS data acquisition
 
 #### 
 
-#### Spatial data preparation
+* #### Spatial data preparation
 
 #### 
 
-#### Cartographic design
+* #### Cartographic design
 
 #### 
 
-#### Research-oriented documentation
+* #### Research-oriented documentation
 
 #### 
 
@@ -44,19 +44,19 @@
 
 #### 
 
-#### Map and visualize the spatial distribution of key rural infrastructure features in Sarawak.
+* #### Map and visualize the spatial distribution of key rural infrastructure features in Sarawak.
 
 #### 
 
-#### Integrate multiple datasets (boundaries, elevation, transportation, settlements, land cover).
+* #### Integrate multiple datasets (boundaries, elevation, transportation, settlements, land cover).
 
 #### 
 
-#### Produce publication-ready cartographic outputs using professional mapping standards.
+* #### Produce publication-ready cartographic outputs using professional mapping standards.
 
 #### 
 
-#### Demonstrate data management, layer styling, and compositing in QGIS.
+* #### Demonstrate data management, layer styling, and compositing in QGIS.
 
 #### 
 
@@ -134,23 +134,31 @@
 
 #### 
 
-#### Roads
+* #### Roads
 
 #### 
 
-#### Rivers
+* #### Rivers
 
 #### 
 
-#### Buildings
+* #### Buildings
 
 #### 
 
-#### Landuse
+* #### Landuse
 
 #### 
 
-#### Schools, clinics, amenities
+* #### Schools
+
+#### 
+
+* #### Clinics
+
+#### 
+
+* #### Amenities
 
 #### 
 
