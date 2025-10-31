@@ -1,44 +1,26 @@
-# <div align="center">
+# 📍 Spatial Distribution Analysis of Rural Infrastructure in Sarawak: A Cartographic Production
 
-# 🗺️ Spatial Distribution Analysis of Rural Infrastructure in Sarawak
 
-# A Cartographic Production
 
-# 
+### A Cartographic Production
 
-# A GIS Portfolio Project by Bayu (Noorfizan Jauraid)
+### 
 
-# Demonstrating professional cartographic and spatial data management skills.
+### A GIS Portfolio Project by Bayu (Noorfizan Jauraid)
 
-# 
 
-# </div>
 
-# <div align="center">
 
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# </div>
 
 # 🧭 1. Overview
 
 # 
 
-# This project presents a research-grade cartographic visualization of rural infrastructure distribution in Sarawak, integrating authoritative GIS datasets from national and global providers. It is designed to demonstrate:
+# This project presents a professional cartographic visualization of rural infrastructure distribution in Sarawak, integrating authoritative datasets from national and global providers. The objective is to demonstrate technical competency in:
 
 # 
 
-# Competence in GIS data acquisition
+# GIS data acquisition
 
 # 
 
@@ -46,15 +28,15 @@
 
 # 
 
-# Professional symbology and map layout design
+# Cartographic design
 
 # 
 
-# Research-oriented documentation and workflow structuring
+# Research-oriented documentation
 
 # 
 
-# This repository forms part of my GIS portfolio and supports my application for a Graduate Research Assistant (GRA) role in geospatial or development-focused research.
+# This repository is part of a broader GIS portfolio developed to showcase academic-grade spatial analysis skills, aligning with expectations for Graduate Research Assistant (GRA) positions.
 
 # 
 
@@ -62,23 +44,23 @@
 
 # 
 
-# The aim of this project is to:
+# This project aims to:
 
 # 
 
-# Map and visualize the spatial distribution of key rural infrastructure features.
+# Map and visualize the spatial distribution of key rural infrastructure features in Sarawak.
 
 # 
 
-# Integrate multi-source spatial datasets into a coherent cartographic workflow.
+# Integrate multiple datasets (boundaries, elevation, transportation, settlements, land cover).
 
 # 
 
-# Produce publication-quality maps aligned with research standards.
+# Produce publication-ready cartographic outputs using professional mapping standards.
 
 # 
 
-# Demonstrate end-to-end GIS project management and documentation.
+# Demonstrate data management, layer styling, and compositing in QGIS.
 
 # 
 
@@ -86,13 +68,19 @@
 
 # 
 
-# Sarawak, Malaysia — the largest state in East Malaysia — characterized by dispersed rural settlements, mountainous terrain, and extensive hydrological networks.
+# Sarawak, Malaysia — the largest state in East Malaysia — characterized by dispersed rural settlements, mountainous terrain, and complex river networks.
 
-# The mapping extent is defined using the GADM Level 1 administrative boundary.
+# The map extent follows Sarawak’s Level 1 GADM boundary.
 
 # 
 
 # 📦 4. Data Sources
+
+# 
+
+# All datasets used in this project are openly available and licensed for academic use.
+
+# 
 
 # 4.1 Administrative Boundaries 🗂️
 
@@ -106,7 +94,7 @@
 
 # 
 
-# Levels: L1 (state), L2 (district)
+# Levels Used: L1 (state), L2 (district)
 
 # 
 
@@ -114,7 +102,7 @@
 
 # 
 
-# 4.2 Elevation Data — SRTM 1 Arc-Second DEM ⛰️
+# 4.2 Elevation (SRTM 1 Arc-Second DEM) ⛰️
 
 # 
 
@@ -126,11 +114,11 @@
 
 # 
 
-# Type: DEM tiles (GeoTIFF)
+# Format: GeoTIFF tiles
 
 # 
 
-# Use: Hillshade, elevation visualization
+# Purpose: Hillshade generation, terrain context
 
 # 
 
@@ -138,7 +126,7 @@
 
 # 
 
-# Provider: Geofabrik (Borneo Extract)
+# Provider: Geofabrik (Borneo extract)
 
 # 
 
@@ -146,11 +134,31 @@
 
 # 
 
-# Layers Extracted: Roads, rivers, buildings, landuse, amenities
+# Layers Used:
 
 # 
 
-# 4.4 Land Cover — ESA WorldCover (2021) 🌲
+# Roads
+
+# 
+
+# Rivers
+
+# 
+
+# Buildings
+
+# 
+
+# Landuse
+
+# 
+
+# Schools, clinics, amenities
+
+# 
+
+# 4.4 Land Cover (ESA WorldCover 2021) 🌲
 
 # 
 
@@ -162,15 +170,11 @@
 
 # 
 
-# Resolution: 10m
+# Format: 10m GeoTIFF
 
 # 
 
-# Use: Background land cover context
-
-# 
-
-# 4.5 Population Data (Optional) 👥
+# 4.5 Population (Optional) 👥
 
 # 
 
@@ -182,7 +186,7 @@
 
 # 
 
-# Use: Rural population distribution context
+# Format: 100m GeoTIFF
 
 # 
 
@@ -194,17 +198,17 @@
 
 # ├── docs/
 
-# │   ├── images/               # Screenshots \& exported figures
+# │   ├── images/               # ✅ Project screenshots \& figure outputs
 
 # │
 
 # ├── src/
 
-# │   ├── qgis/                 # QGIS project (.qgz) \& style files (.qml)
+# │   ├── qgis/                 # ✅ QGIS project (.qgz) \& styles (.qml)
 
 # │
 
-# ├── data/                     # Local datasets (gitignored)
+# ├── data/                     # ✅ Local datasets (ignored by GitHub)
 
 # │   ├── boundaries/
 
@@ -218,9 +222,9 @@
 
 # │
 
-# ├── .gitignore
+# ├── .gitignore               
 
-# ├── README.md
+# ├── README.md                
 
 # └── LICENSE (optional)
 
@@ -232,47 +236,43 @@
 
 # 
 
-# Use GADM L1 boundary for the Sarawak extent
+# Using GADM L1 boundary
 
 # 
 
-# Save screenshot → docs/images/aoi.png
+# AOI screenshot stored in docs/images/
 
 # 
 
-# ✅ Step 2 — Acquire Datasets
+# ✅ Step 2 — Download datasets
 
 # 
 
-# SRTM DEM tiles
+# SRTM DEM tiles from NASA Earthdata
 
 # 
 
-# OSM infrastructure
+# OSM infrastructure layers from Geofabrik
 
 # 
 
-# WorldCover (optional)
+# Optional: Land cover + population
 
 # 
 
-# WorldPop (optional)
+# ✅ Step 3 — Prepare GIS data
 
 # 
 
-# ✅ Step 3 — Data Preparation
+# Merge + clip DEM
 
 # 
 
-# Merge DEM tiles
+# Reproject all layers to consistent CRS (EPSG:3857/3375)
 
 # 
 
-# Clip layers to AOI
-
-# 
-
-# Standardize CRS (EPSG:3857 or EPSG:3375)
+# Clean and standardize attribute fields
 
 # 
 
@@ -280,39 +280,39 @@
 
 # 
 
-# Hillshade generation
+# Hillshade + DEM blending
 
 # 
 
-# Road hierarchy symbology
+# Road and river hierarchy styling
 
 # 
 
-# Water and settlement layers
+# District label placement
 
 # 
 
-# Label placement
+# Legend, scale bar, north arrow
 
 # 
 
-# Layout composition
+# ✅ Step 5 — Export Maps
 
 # 
 
-# ✅ Step 5 — Final Outputs
+# Save as PNG and PDF
 
 # 
 
-# Export maps → PNG + PDF
+# Upload PNG into docs/images/
 
 # 
 
-# Store PNG in docs/images/
+# 🖼️ 7. Outputs
 
 # 
 
-# 🖼️ 7. Expected Outputs
+# Final visual products will include:
 
 # 
 
@@ -324,19 +324,19 @@
 
 # 
 
-# 🌊 River \& Settlement Map
+# 🌊 River Network \& Settlement Map
 
 # 
 
-# 🗺️ Composite Rural Infrastructure Map
+# 🗺️ Final Composite Infrastructure Map
 
 # 
 
-# Maps will be added as development progresses.
+# (All outputs added progressively as project develops.)
 
 # 
 
-# 🛠️ 8. Tools
+# 🛠️ 8. Tools Used
 
 # 
 
@@ -364,21 +364,12 @@
 
 # 
 
-# This project uses open-access datasets provided by NASA, ESA, GADM, OSM contributors, and WorldPop.
+# Datasets provided by ESA, NASA, WorldPop, GADM, and OpenStreetMap contributors.
 
-# All rights belong to their respective providers.
+All rights belong to their respective providers.
 
-# 
-
-# <div align="center">
-
-# 
-
-# 📌 Project maintained by Bayu
+📌 Project maintained by Noorfizan Jauraid
+===
 
 # For academic and research demonstration purposes.
-
-# 
-
-# </div>
 
